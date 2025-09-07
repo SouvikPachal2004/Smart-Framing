@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farming Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Smart Farming Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#crop-recommendation">Crop Recommendation</a></li>
+                <li><a href="#weather">Weather Forecast</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Smart Farming</h2>
+            <p>Enhancing agriculture with AI-based recommendations and real-time insights.</p>
+            <a href="#crop-recommendation" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Crop Recommendation Section -->
+    <section id="crop-recommendation" class="container">
+        <h2>Crop Recommendation</h2>
+        <form id="cropForm">
+            <label for="soilType">Soil Type:</label>
+            <input type="text" id="soilType" required>
+
+            <label for="pH">Soil pH:</label>
+            <input type="number" id="pH" step="0.1" required>
+
+            <label for="moisture">Moisture Level:</label>
+            <input type="number" id="moisture" required>
+
+            <button type="submit" class="btn">Get Recommendation</button>
+        </form>
+        <p id="cropResult"></p>
+    </section>
+
+    <!-- Weather Forecast Section -->
+    <section id="weather" class="container">
+        <h2>☁️ Weather Forecast</h2>
+        <button id="fetchWeather" class="btn"><a href="/Weather-Warden-main/index.html">Get Weather</a></button>
+        <p id="weatherResult"></p>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="container">
+        <h2>🛒 Market Place</h2>
+        <p>Buy and sell farming products easily.</p>
+        <button id="fetchWeather" class="btn"><a href="/Marketplace/frontend/index.html">Buy Product</a></button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Email: support@smartfarming.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Smart Farming Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

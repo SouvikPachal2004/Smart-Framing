@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 Your Cart</h1>
+        <a href="index.html" class="cart-link">⬅️ Back to Shop</a>
+    </header>
+
+    <section class="cart">
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button onclick="checkout()"><a href="checkout.html">Proceed to Checkout</a></button>
+    </section>
+
+    <footer>
+        <p>© 2025 Smart Farming Marketplace</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
